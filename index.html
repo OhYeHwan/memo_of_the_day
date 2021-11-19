@@ -5,46 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memo of the day</title>
-    <script src="./build/main.js"></script>
+    <script src="./build/main.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">📖 오늘의 메모</header>
     <ul class="button__group">
-      <button class="button__item">Video</button>
-      <button class="button__item">Image</button>
-      <button class="button__item">Note</button>
-      <button class="button__item">Task</button>
+      <button class="button__item" onclick="openUrlPopUp(event)">Video</button>
+      <button class="button__item" onclick="openUrlPopUp(event)">Image</button>
+      <button class="button__item" onclick="openContentPopUp(event)">
+        Note
+      </button>
+      <button class="button__item" onclick="openContentPopUp(event)">
+        Task
+      </button>
     </ul>
     <div class="main">
-      <div class="memo">
-        <div class="memo__title">title</div>
-        <div class="memo__content">내용</div>
-      </div>
-      <div class="memo">
-        <div class="memo__title">title</div>
-        <div class="memo__content">내용</div>
-      </div>
-      <div class="memo">
-        <div class="memo__title">title</div>
-        <div class="memo__content">내용</div>
-      </div>
-      <div class="memo">
-        <div class="memo__title">title</div>
-        <div class="memo__content">내용</div>
-      </div>
-      <div class="memo">
-        <div class="memo__title">title</div>
-        <div class="memo__content">내용</div>
-      </div>
-      <div class="memo">
-        <div class="memo__title">title</div>
-        <div class="memo__content">내용</div>
-      </div>
-      <div class="memo">
-        <div class="memo__title">title</div>
-        <div class="memo__content">내용</div>
-      </div>
       <div class="memo">
         <div class="memo__title">title</div>
         <div class="memo__content">내용</div>
@@ -54,15 +30,24 @@
       <div class="footer__content">@Copyright by Yehwan</div>
     </footer>
     <div class="popup">
-      <form class="popup__video">
-        <button class="popup__x">X</button>
-        <div class="popup__video__box">
+      <form class="popup__box">
+        <button class="popup__x" onclick="closePopUp(event)">X</button>
+        <div class="popup__box__input">
           <label for="title">Title</label>
-          <input id="title" type="text" />
+          <input class="popup__box__input__title" id="title" type="text" />
         </div>
-        <div class="popup__video__box">
+        <div class="popup__box__url">
           <label for="url">URL</label>
-          <input id="url" type="text" />
+          <input class="popup__box__url__input" id="url" type="text" />
+        </div>
+        <div class="popup__box__content">
+          <label for="content">Content</label>
+          <textarea
+            rows="3"
+            class="popup__box__content__input"
+            id="content"
+            type="text"
+          ></textarea>
         </div>
         <button class="popup__add">ADD</button>
       </form>

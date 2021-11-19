@@ -90,12 +90,12 @@ label {
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
 
-.popup__video {
+.popup__box {
   width: 500px;
   height: 200px;
   border-radius: 20px;
@@ -121,11 +121,27 @@ label {
   color: rgb(175, 175, 175);
 }
 
-.popup__video__box {
+.popup__box__url,
+.popup__box__content,
+.popup__box__input {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: auto;
+}
+
+.popup__box__url {
+  display: none;
+}
+
+.popup__box__content {
+  display: none;
+}
+
+.popup__box__content__input {
+  height: 50px;
+  resize: none;
+  margin: 0 3px 0 3px;
 }
 
 .popup__add {
