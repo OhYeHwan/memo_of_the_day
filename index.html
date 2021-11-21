@@ -9,28 +9,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">📖 오늘의 메모</header>
-    <ul class="button__group">
-      <button class="button__item" onclick="openUrlPopUp(event)">Video</button>
-      <button class="button__item" onclick="openUrlPopUp(event)">Image</button>
-      <button class="button__item" onclick="openContentPopUp(event)">
-        Note
-      </button>
-      <button class="button__item" onclick="openContentPopUp(event)">
-        Task
-      </button>
-    </ul>
-    <div class="main">
-      <div class="memo">
-        <button class="memo__delete_button">X</button>
-        <div class="memo__title">Title</div>
-        <div class="memo__content">Content</div>
-      </div>
+    <div class="app">
+      <header class="banner">
+        <h1 class="banner__title">📖 오늘의 메모</h1>
+      </header>
+      <ul class="control-panel">
+        <li><button id="new-image" class="create-button">Video</button></li>
+        <li><button id="new-video" class="create-button">Image</button></li>
+        <li><button id="new-note" class="create-button">Note</button></li>
+        <li><button id="new-todo" class="create-button">Task</button></li>
+      </ul>
+      <div class="main"></div>
+      <footer class="footer">
+        <div class="footer__content">@Copyright by Yehwan</div>
+      </footer>
     </div>
-    <footer class="footer">
-      <div class="footer__content">@Copyright by Yehwan</div>
-    </footer>
-    <div class="popup">
+  </body>
+</html>
+
+<!--
+<div class="popup">
       <form class="popup__box">
         <button class="popup__x" onclick="closePopUp(event)">X</button>
         <div class="popup__box__input">
@@ -53,5 +51,10 @@
         <button type="submit" class="popup__add">ADD</button>
       </form>
     </div>
-  </body>
-</html>
+
+    <div class="memo">
+      <button class="memo__delete_button">X</button>
+      <div class="memo__title">Title</div>
+      <div class="memo__content">Content</div>
+    </div>
+-->
