@@ -3,6 +3,8 @@ import { InputDialog } from "./dialog/dialog.js";
 import { MediaSectionInput } from "./dialog/input/media-input.js";
 import { TextSectionInput } from "./dialog/input/text-input.js";
 import { ImageComponent } from "./page/item/image.js";
+import { NoteComponent } from "./page/item/note.js";
+import { TodoComponent } from "./page/item/todo.js";
 import { VideoComponent } from "./page/item/video.js";
 import { Composable, PageComponent, PageItemComponent } from "./page/page.js";
 
@@ -34,13 +36,13 @@ class App {
     this.bindElementToDialog<TextSectionInput>(
       "#new-note",
       TextSectionInput,
-      (input: TextSectionInput) => new ImageComponent(input.title, input.body)
+      (input: TextSectionInput) => new NoteComponent(input.title, input.body)
     );
 
     this.bindElementToDialog<TextSectionInput>(
       "#new-todo",
       TextSectionInput,
-      (input: TextSectionInput) => new ImageComponent(input.title, input.body)
+      (input: TextSectionInput) => new TodoComponent(input.title, input.body)
     );
   }
 
