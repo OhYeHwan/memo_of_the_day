@@ -3,6 +3,7 @@ import { InputDialog } from "./dialog/dialog.js";
 import { MediaSectionInput } from "./dialog/input/media-input.js";
 import { TextSectionInput } from "./dialog/input/text-input.js";
 import { ImageComponent } from "./page/item/image.js";
+import { VideoComponent } from "./page/item/video.js";
 import { Composable, PageComponent, PageItemComponent } from "./page/page.js";
 
 type InputComponentConstructor<
@@ -21,7 +22,7 @@ class App {
     this.bindElementToDialog<MediaSectionInput>(
       "#new-video",
       MediaSectionInput,
-      (input: MediaSectionInput) => new ImageComponent(input.title, input.url)
+      (input: MediaSectionInput) => new VideoComponent(input.title, input.url)
     );
 
     this.bindElementToDialog<MediaSectionInput>(
