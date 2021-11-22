@@ -6,7 +6,7 @@ export class MediaSectionInput extends BaseComponent<HTMLElement> {
             <div>
                 <div class="form__container">
                     <label for="title">Title</label>
-                    <input type="text id="title />
+                    <input type="text" id="title" />
                 </div>
                 <div class="form__container">
                     <label for="url">URL</label>
