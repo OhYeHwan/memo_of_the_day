@@ -1,4 +1,4 @@
-import { BaseComponent, Component } from "../component";
+import { BaseComponent, Component } from "../component.js";
 
 type OnCloseListener = () => void;
 type OnSubmitListener = () => void;
@@ -12,7 +12,7 @@ export class InputDialog extends BaseComponent<HTMLElement> {
                 <div class="dialog__container">
                     <button class="close">&times;</button>
                     <div id="dialog__body"></div>
-                    <button class="dialog__submit"></button>
+                    <button class="dialog__submit">ADD</button>
                 </div>
             </dialog>
         `);

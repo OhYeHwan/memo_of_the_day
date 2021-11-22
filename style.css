@@ -1,5 +1,6 @@
 :root {
   --bg-accent-color: #2d2d2d;
+  --shadow-color: #202020;
 }
 
 li {
@@ -64,6 +65,7 @@ label {
   justify-content: center;
 }
 
+.dialog__submit,
 .create-button {
   padding: 15px 30px;
   margin: 0px 14px;
@@ -157,79 +159,68 @@ label {
   align-items: center;
 }
 
-.popup {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  justify-content: center;
+.dialog {
+  display: flex;
   align-items: center;
-}
-
-.popup__box {
-  width: 500px;
-  height: 200px;
-  border-radius: 20px;
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-}
-
-.popup__x {
-  position: relative;
-  left: 465px;
-  width: 28px;
-  height: 28px;
-  outline: 0;
-  border: 0;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: whitesmoke;
-  color: grey;
-}
-
-.popup__x:hover {
-  color: rgb(175, 175, 175);
-}
-
-.popup__box__url,
-.popup__box__content,
-.popup__box__input {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-  margin: auto;
-}
-
-.popup__box__url {
-  display: none;
-}
-
-.popup__box__content {
-  display: none;
-}
-
-.popup__box__content__input {
-  height: 50px;
-  resize: none;
-  margin: 0 3px 0 3px;
-}
-
-.popup__add {
-  position: relative;
-  left: 410px;
-  width: 80px;
-  height: 40px;
-  cursor: pointer;
+  height: 100%;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
   border: 0;
-  outline: 0;
-  padding: 0 0 5px 0;
-  border-radius: 10px;
-  background-color: whitesmoke;
-  color: grey;
 }
 
-.popup__add:hover {
-  color: rgb(175, 175, 175);
+.dialog__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4em;
+  width: 32em;
+  background: whitesmoke;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 20px var(--shadow-color);
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.close {
+  align-self: flex-end;
+  padding: 0.2rem;
+  color: grey;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 3px;
+  transition: color 250ms ease;
+  background-color: whitesmoke;
+}
+
+.close:hover,
+.close:focus {
+  transform: scale(1.1);
+  color: var(--shadow-color);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dialog__submit {
+  align-self: flex-end;
+  padding: 0.5em 1.5em;
+}
+
+.dialog__submit:hover,
+.dialog__submit:focus {
+  transform: scale(1.1);
+  color: var(--shadow-color);
+  text-decoration: none;
+  cursor: pointer;
 }
