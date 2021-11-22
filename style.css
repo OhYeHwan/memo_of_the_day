@@ -1,3 +1,7 @@
+:root {
+  --bg-accent-color: #2d2d2d;
+}
+
 li {
   list-style: none;
   padding-left: 0;
@@ -54,6 +58,7 @@ label {
 /* button */
 
 .control-panel {
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,13 +77,25 @@ label {
   color: ghostwhite;
 }
 
-.main {
+.document {
   height: 750px;
   width: 500px;
   margin: auto;
   background-color: ghostwhite;
   border-radius: 20px;
-  overflow: scroll;
+  scrollbar-color: var(--bg-accent-color);
+  overflow-y: auto;
+}
+
+.document::-webkit-scrollbar {
+  /* Safari and Chrome */
+  background-color: var(--bg-accent-color);
+  width: 6px;
+}
+
+.document::-webkit-scrollbar-thumb {
+  /* Safari and Chrome */
+  background-color: var(--accent-color);
 }
 
 .memo {
