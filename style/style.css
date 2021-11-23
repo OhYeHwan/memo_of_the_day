@@ -3,6 +3,10 @@
   --shadow-color: #202020;
 }
 
+ul {
+  padding: 0;
+}
+
 li {
   list-style: none;
   padding-left: 0;
@@ -100,61 +104,19 @@ label {
   margin: auto;
   background-color: ghostwhite;
   border-radius: 20px;
-  scrollbar-color: var(--bg-accent-color);
+  scrollbar-color: white;
   overflow-y: auto;
 }
 
 .document::-webkit-scrollbar {
   /* Safari and Chrome */
-  background-color: var(--bg-accent-color);
+  background-color: white;
   width: 6px;
 }
 
 .document::-webkit-scrollbar-thumb {
   /* Safari and Chrome */
-  background-color: var(--accent-color);
-}
-
-.memo {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: 20px;
-  width: 450px;
-  height: 150px;
-  box-sizing: border-box;
-  border-radius: 20px;
   background-color: white;
-}
-
-.memo__delete_button {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  border-radius: 50%;
-  outline: 0;
-  border: 0;
-  cursor: pointer;
-  background-color: white;
-  color: grey;
-}
-
-.memo__delete_button:hover {
-  color: rgb(175, 175, 175);
-}
-
-.memo__title {
-  font-size: 20px;
-  color: rgb(175, 175, 175);
-  flex: 1;
-  padding: 20px 0 0 20px;
-}
-
-.memo__content {
-  color: rgba(30, 26, 26);
-  font-size: 20px;
-  flex: 2;
-  padding: 0 0 0 20px;
 }
 
 .footer {
@@ -196,7 +158,7 @@ label {
   flex-direction: column;
   padding: 0.4em;
   width: 32em;
-  background: whitesmoke;
+  background: white;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 20px var(--shadow-color);
 }
@@ -215,7 +177,7 @@ label {
   font-weight: bold;
   margin: 3px;
   transition: color 250ms ease;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .close:hover,
@@ -238,4 +200,79 @@ label {
   color: var(--shadow-color);
   text-decoration: none;
   cursor: pointer;
+}
+
+/* -- page item -- */
+.page-item {
+  margin: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 5px var(--shadow-color);
+  border-radius: 20px;
+  background-color: white;
+}
+
+.page-item__controls {
+  background: white;
+}
+
+.page-item__title {
+  padding: 10px 0 0 10px;
+  margin: 12px 12px 0 12px;
+  font-size: 20px;
+}
+
+.page-item__body {
+  width: 100%;
+  border-right: 2px dotted rgba(161, 161, 161, 0.711);
+}
+
+/* -- Image & Video -- */
+
+.note,
+.video,
+.image {
+  display: flex;
+  flex-direction: column;
+}
+
+.video {
+  height: 300px;
+}
+
+.image {
+  height: 100%;
+}
+
+.note__body,
+.video__player,
+.image__holder {
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+}
+
+.image__thumbnail,
+.video__iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.todo__body {
+  display: flex;
+  margin: 16px 0 16px 0;
+  align-items: center;
+}
+
+.todo__body,
+.note__body {
+  font-size: 18px;
+  padding: 0 0 0 26px;
+  color: gray;
+}
+
+.todo-label {
+  padding-left: 10px;
 }

@@ -5,8 +5,10 @@ export class TodoComponent extends BaseComponent<HTMLElement> {
     super(`
             <section class="todo">
                 <h2 class="page-item__title todo__title"></h2>
-                <input type="checkbox" class="todo-checkbox">
-                <label for="todo-checkbox" class="todo-label"></label>
+                <div class="todo__body">
+                  <input type="checkbox" class="todo-checkbox">
+                  <label for="todo-checkbox" class="todo-label"></label>
+                </div>
             </section>
         `);
 

@@ -4,7 +4,7 @@ export class ImageComponent extends BaseComponent<HTMLElement> {
   constructor(title: string, url: string) {
     super(`
             <section class="image">
-                <h2 class="page-image__title image__title"></h2>
+                <h2 class="page-item__title image__title"></h2>
                 <div class="image__holder">
                     <img class="image__thumbnail" />
                 </div>
