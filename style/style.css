@@ -99,9 +99,10 @@ label {
 }
 
 .document {
-  height: 750px;
+  height: 100%;
   width: 500px;
   margin: auto;
+  margin-bottom: 16px;
   background-color: ghostwhite;
   border-radius: 20px;
   scrollbar-color: white;
@@ -275,4 +276,27 @@ label {
 
 .todo-label {
   padding-left: 10px;
+}
+
+/* ----- drag and drop ----- */
+.mute-children * {
+  pointer-events: none;
+}
+
+.lifted {
+  animation: drag_start 250ms;
+  opacity: 0.2;
+}
+
+@keyframes drag_start {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.drop-area {
+  border: 2px dotted rgba(17, 255, 0, 0.608);
 }

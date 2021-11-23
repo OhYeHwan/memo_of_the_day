@@ -48,6 +48,25 @@ class App {
       TextSectionInput,
       (input: TextSectionInput) => new TodoComponent(input.title, input.body)
     );
+
+    this.page.addChild(
+      new ImageComponent("Image Test", "https://picsum.photos/200")
+    );
+
+    this.page.addChild(
+      new VideoComponent(
+        "Video Test",
+        "https://www.youtube.com/watch?v=DSgKkCUAcPw"
+      )
+    );
+
+    this.page.addChild(
+      new ImageComponent("Image Test2", "https://picsum.photos/200")
+    );
+
+    this.page.addChild(new NoteComponent("Note Test", "hello"));
+    this.page.addChild(new NoteComponent("Note2 Test", "hdsaello"));
+    this.page.addChild(new TodoComponent("Todo Test", "helldsadso"));
   }
 
   private bindElementToDialog<
