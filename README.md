@@ -40,6 +40,12 @@
 
 <br>
 
+Web⭐️
+
+[오늘의 메모 URL](https://ohyehwan.github.io/memo_of_the_day/)
+
+<br>
+
 <img width="487" alt="스크린샷 2021-12-01 오후 11 40 06" src="https://user-images.githubusercontent.com/66069736/144254826-6be8ab12-871d-4c21-bd77-2e111a013f30.png">
 
 4개의 버튼을 통해 메모유형을 선택할 수 있습니다.
