@@ -38,7 +38,9 @@
 
 ## 프로젝트 데모
 
-데모링크입니다.
+Web⭐️
+
+[오늘의 메모 URL](https://ohyehwan.github.io/memo_of_the_day/)
 
 <br>
 
