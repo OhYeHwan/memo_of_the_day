@@ -1,4 +1,4 @@
-# Memo Web Aplication
+# 📖 Memo Web Aplication
 
 <br>
 
@@ -27,35 +27,50 @@
 
 > 간단한 메모나 ToDo List를 작성하고 동영상이나 이미지를 기록할 수있는 Web
 > Application 입니다.
+> <br>
 
-<h3> ☝🏼 순수 HTML과 CSS를 이용하여 UI를 구현 하였습니다. </h3>
+<h2> ✅ 순수 HTML과 CSS를 이용하여 UI를 구현 하였습니다. </h2>
+<br>
 
-<h3> ☝🏼 TypeScript를 이용하여 객체지향적으로 구현하였습니다. </h3>
+<h2> ✅ TypeScript를 이용하여 객체지향적으로 구현하였습니다. </h2>
+<br>
 
-<h3> ☝🏼 Web API를 이용하여 메모를 드래그 앤 드롭하는 기능을 구현 하였습니다. </h3>
+<h2> ✅ Web API를 이용하여 메모를 드래그 앤 드롭하는 기능을 구현 하였습니다. </h2>
+<br>
 
 <br>
 
 ## 프로젝트 데모
 
-<br>
-
-Web⭐️
-
-[오늘의 메모 URL](https://ohyehwan.github.io/memo_of_the_day/)
+<h3 align="center">
+<a href="https://ohyehwan.github.io/memo_of_the_day/">⭐️ 오늘의 메모로 이동하기 ⭐️</a>
+</h3>
 
 <br>
 
-<img width="487" alt="스크린샷 2021-12-01 오후 11 40 06" src="https://user-images.githubusercontent.com/66069736/144254826-6be8ab12-871d-4c21-bd77-2e111a013f30.png">
+<h3 align="center">
+🖐🏻 4개의 버튼을 통해 메모유형을 선택할 수 있습니다.
+</h3>
+<p align="center">
+<img  width="487" alt="스크린샷 2021-12-01 오후 11 40 06" src="https://user-images.githubusercontent.com/66069736/144254826-6be8ab12-871d-4c21-bd77-2e111a013f30.png">
+</p>
 
-4개의 버튼을 통해 메모유형을 선택할 수 있습니다.
+<br>
 
-<img width="688" alt="스크린샷 2021-12-01 오후 11 43 51" src="https://user-images.githubusercontent.com/66069736/144255237-816f1b45-bc70-4927-a25d-ab2dad0dbccd.png">
-
-버튼 클릭시 팝업 창을 통해 데이터를 입력할 수 있습니다. Video와 Image는 Title과
+<h3 align="center">
+🖐🏻버튼 클릭시 팝업 창을 통해 데이터를 입력할 수 있습니다. Video와 Image는 Title과
 URL를 입력받고 Note와 Todo의 경우 Title과 Text를 입력 받습니다.
+</h3>
+<p align="center">
+<img width="688" alt="스크린샷 2021-12-01 오후 11 43 51" src="https://user-images.githubusercontent.com/66069736/144255237-816f1b45-bc70-4927-a25d-ab2dad0dbccd.png">
+</p>
 
-![memo2](https://user-images.githubusercontent.com/66069736/144258275-c9eeb9e5-8825-4e18-b7f3-5b24b3805a36.gif)
+<br>
 
-각각의 메모옆에 취소버튼을 통해서 해당 메모를 삭제할 수 있고 드래그 앤 드롭을 이
+<h3 align="center">
+🖐🏻 각각의 메모옆에 취소버튼을 통해서 해당 메모를 삭제할 수 있고 드래그 앤 드롭을 이
 용하여 메모의 위치를 변경할 수 있습니다.
+</h3>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/66069736/144258275-c9eeb9e5-8825-4e18-b7f3-5b24b3805a36.gif">
+</p>
