@@ -26,7 +26,7 @@
 ## 제작 기간
 
 <h3> 2021.11 - 📚 TypeScript Study </h3>
-<h3> 2021.12 - 🚀 Implementing </h3>
+<h3> 2021.12 - 🚀 Implement </h3>
 
 <br>
 
