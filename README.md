@@ -1,8 +1,8 @@
-# 📖 Memo Web Aplication
+# 📖 오늘의 메모
 
 <br>
 
-<h2 align="center"> 📖 오늘의 메모  </h2>
+<h2 align="center"> 🛠 Stack 🛠  </h2>
 
 <br>
 
@@ -23,19 +23,31 @@
 
 <br>
 
+## 제작 기간
+
+<h3> 2021.11 - 📚 TypeScript Study </h3>
+<h3> 2021.12 - 🚀 Implementing </h3>
+
+<br>
+
 ## 오늘의 메모
 
 > 간단한 메모나 ToDo List를 작성하고 동영상이나 이미지를 기록할 수있는 Web
 > Application 입니다.
-> <br>
+>
+> < 주요 기능 >
+>
+> 1. 미디어 컨텐츠(이미지, 동영상) 기록 기능
+> 2. 노트, 리스트(텍스트) 기록 기능
+> 3. Drag and Drog 기능
 
-<h2> ✅ 순수 HTML과 CSS를 이용하여 UI를 구현 하였습니다. </h2>
+<h3> ✅ 순수 HTML과 CSS를 이용한 UI 구현</h3>
 <br>
 
-<h2> ✅ TypeScript를 이용하여 객체지향적으로 구현하였습니다. </h2>
+<h3> ✅ TypeScript를 이용한 객체지향적 구현 </h3>
 <br>
 
-<h2> ✅ Web API를 이용하여 메모를 드래그 앤 드롭하는 기능을 구현 하였습니다. </h2>
+<h3> ✅ Web API를 이용한 메모 드래그 앤 드롭 기능 구현 </h3>
 <br>
 
 <br>
@@ -48,6 +60,8 @@
 
 <br>
 
+## 프로젝트 프리뷰
+
 <h3 align="center">
 🖐🏻 4개의 버튼을 통해 메모유형을 선택할 수 있습니다.
 </h3>
@@ -58,7 +72,7 @@
 <br>
 
 <h3 align="center">
-🖐🏻버튼 클릭시 팝업 창을 통해 데이터를 입력할 수 있습니다. Video와 Image는 Title과
+🖐🏻 버튼 클릭시 팝업 창을 통해 데이터를 입력할 수 있습니다. Video와 Image는 Title과
 URL를 입력받고 Note와 Todo의 경우 Title과 Text를 입력 받습니다.
 </h3>
 <p align="center">
